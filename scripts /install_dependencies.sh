@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo apt-get update -y
-sudo apt -y install apache2 
+sudo apt -y install nginx
 
