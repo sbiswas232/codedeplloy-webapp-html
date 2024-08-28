@@ -22,7 +22,7 @@ phases:
   post_build:
     commands:
       - echo "Push Image to DockerHub..."
-      - echo echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin docker.io
+      - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin docker.io
       - docker push "$DOCKER_REGISTRY_USERNAME/codedeploy-webapp:v29aug"
       - docker logout
       - echo "Image Push to DockerHub Successfully..."
