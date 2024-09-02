@@ -5,6 +5,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     container_name: webappcon
-    image: sbiswas232/codedeploy-webapp:v02sep 
+    image: codedeploy-webapp:v02sep
     ports:
       - "80:80"
