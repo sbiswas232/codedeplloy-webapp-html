@@ -5,6 +5,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     container_name: webappcon
-    image: "$DOCKER_CREDENTIALS_USR"/codedeploy-webapp:v02sep
+    image: "$DOCKER_CREDENTIALS_USR/codedeploy-webapp:v02sep"
     ports:
       - "80:80"
