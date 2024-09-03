@@ -1,10 +1,10 @@
 version: "3.3"
 services:
   web1:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    container_name: webappcon
     image: "$DOCKER_CREDENTIALS_USR/codedeploy-webapp:v02sep"
+    container_name: webappcon
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "9000:80"
